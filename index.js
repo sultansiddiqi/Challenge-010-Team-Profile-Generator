@@ -13,7 +13,7 @@ teamArray = [];
 
 
 function runApp () {
-
+//Adding the create team function to start asking the questions
   function createTeam () {
     inquirer.prompt([{
       type: "list",
@@ -38,7 +38,7 @@ function runApp () {
     })
   }
 // OOP Functions
-
+//Adding the manager
 function addManager() {
   inquirer.prompt ([
     
@@ -74,7 +74,7 @@ function addManager() {
 
 }
 
-
+//Adding the Engineer
 function addEngineer() {
     inquirer.prompt([
       
@@ -109,7 +109,7 @@ function addEngineer() {
     });
 
   }
-
+// Adding the intern
   function addIntern() {
     inquirer.prompt([
       
