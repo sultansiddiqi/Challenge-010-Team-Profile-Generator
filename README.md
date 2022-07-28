@@ -32,6 +32,6 @@ Sultan Siddiqi
 
 ## Contact
 
-[GitHub Profile](https://github.com/sultansiddiqi
+[GitHub Profile](https://github.com/sultansiddiqi)
 
 Email Me -- sultan.siddiqi@gmail.com
