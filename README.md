@@ -30,6 +30,8 @@ The challenge is to build a Node.js command-line application that takes in infor
 ## Demo Video
 
 [Walkthrough-Video-Here](https://youtu.be/HES416IvBn8)
+[Walkthrough-Video-Here-DemoOfGeneratedPage](https://youtu.be/zOxwkePPdno)
+
 ## Usage
 
 - Step 1:
