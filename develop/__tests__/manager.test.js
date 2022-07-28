@@ -1,44 +1,20 @@
-const Manager = require('../lib/Manager');
+// My Attempt
+const Manager = require("../lib/Manager");
 
-describe("Manager", () => {
-	describe("getName", () => {
-		it('Make sure it\'s setting the Manager name and pulling it as well.', () => {
-			const name = 'sultan';
-			const nameTest = new Manager(name, 32, 'email', 'on');
-			expect(nameTest.getName()).toBe(name);
-		});
-	});
+test("Can create an office number.", () => {
+    const testOfficeNumber = 2;
+    const employeeInstance = new Manager("Sultan", 2, "sultan@gmail.com", testOfficeNumber);
+    expect(employeeInstance.officeNumber).toBe(testOfficeNumber);
+});
 
-	describe("getID", () => {
-		it('Make sure it\'s setting the Manager ID and pulling it as well.', () => {
-			const eId = '32';
-			const idTest = new Manager('sultan', eId, 'email', 'on');
-			expect(idTest.getId()).toBe(eId);
-		});
-	});
+test("Testing officeNumber will return office number.", () => {
+    const testOfficeNumber = 2;
+    const employeeInstance = new Manager("Sultan", 2, "sultan@gmail.com", testOfficeNumber);
+    expect(employeeInstance.getOfficeNumber()).toBe(testOfficeNumber);
+});
 
-	describe("getEmail", () => {
-		it('Make sure it\'s setting the Manager E-mail and pulling it as well.', () => {
-			const email = 'sultan@gmail.com';
-			const emailTest = new Manager('sultan', 32, email, 'on');
-			expect(emailTest.getEmail()).toBe(email);
-		})
-	});
-
-	describe("getSchool", () => {
-		it('Make sure it\'s setting the Manager E-mail and pulling it as well.', () => {
-			const officeNumber = 1;
-			const officeNumberTest = new Manager('sultan', 32, 'email', 1);
-			expect(officeNumberTest.getOfficeNumber()).toBe(officeNumber);
-		})
-	});
-
-	describe("getRole", () => {
-		it('Make sure it\'s setting the role and pulling it as well.', () => {
-			const roleString = 'Manager';
-			const roleTest = new Manager('sultan', 32, 'sultan@gmail.com', 1);
-			expect(roleTest.getRole()).toBe(roleString);
-		});
-	});
-
+test("Testing role.", () => {
+    const returnValue = "Manager";
+    const employeeInstance = new Manager("Sultan", 2, "sultan@gmail.com", 2);
+    expect(employeeInstance.getRole()).toBe(returnValue);
 });

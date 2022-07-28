@@ -1,49 +1,51 @@
-// const { it } = require('@jest/globals');
-// const { describe } = require('yargs');
-const Employee = require('../lib/Employee')
+const Employee = require("../lib/Employee");
+
+test("Can create an new employee.", () => {
+    const employeeInstance = new Employee();
+    expect(typeof(employeeInstance)).toBe("object");
+})
+
+test("Testing name.", () => {
+    const name = "Sultan";
+    const employeeInstance = new Employee(name);
+    expect(employeeInstance.name).toBe(name);
+})
+
+test("Testing ID.", () => {
+    const id = 2;
+    const employeeInstance = new Employee("Sultan", id);
+    expect(employeeInstance.id).toBe(id);
+})
+
+test("Testing email.", () => {
+    const email = "sultan@gmail.com";
+    const employeeInstance = new Employee("Sultan", 2, email);
+    expect(employeeInstance.email).toBe(email);
+})
 
 
 
-describe("Employee", () => {
-	describe("getName", () => {
-		it('Make sure it\'s setting the employee name and pulling it as well.', () => {
-			const name = 'sultan';
-			const nameTest = new Employee(name , '42', 'sultan@gmail.com');
-			expect(nameTest.getName()).toBe(name);
-		})
-	})
+test("Gets name through getName method.", () => {
+    const testName = "Sultan";
+    const employeeInstance = new Employee(testName);
+    expect(employeeInstance.getName()).toBe(testName);
+})
 
-	describe("getID", () => {
-		it('Make sure it\'s setting the employee ID and pulling it as well.', () => {
-			const eId = '42';
-			const idTest = new Employee('sultan', eId, 'sultan@gmail.com');
-			expect(idTest.getId()).toBe(eId);
-		})
-	})
+test("Can test ID through getID method.", () => {
+    const testID = 2;
+    const employeeInstance = new Employee("Sultan", testID);
+    expect(employeeInstance.getId()).toBe(testID);
+})
 
-	describe("getEmail", () => {
-		it('Make sure it\'s setting the employee E-mail and pulling it as well.', () => {
-			const email = 'sultan@gmail.com';
-			const idTest = new Employee('sultan', '42', email);
-			expect(idTest.getEmail()).toBe(email);
-		})
-	})
+test("Can test email through getEmail method.", () => {
+    const testEmail = "sultan@gmail.com";
+    const employeeInstance = new Employee("Sultan", 2, testEmail);
+    expect(employeeInstance.getEmail()).toBe(testEmail);
+})
 
-	describe("getRole", () => {
-		it('Make sure it\'s setting the role and pulling it as well.', () => {
-			const roleString = 'Employee';
-			const roleTest = new Employee('sultan', 1, 'sultan@gmail.com');
-			expect(roleTest.getRole()).toBe(roleString);
-		})
-	})
+test("Testing role.", () => {
+    const returnValue = "Employee";
+    const employeeInstance = new Employee("Sultan", 2, "sultan@gmail.com");
+    expect(employeeInstance.getRole()).toBe(returnValue);
+})
 
-});
-
-
-
-
-// test('Make sure it\'s returning the role string \'Employee\'', () => {
-// 	const roleString = 'Employee';
-// 	const roleTest = new Employee('sultan', 1, 'sultan@gmail.com');
-// 	expect(roleTest.getRole()).toBe(roleString);
-// });

@@ -1,44 +1,20 @@
-const Intern = require('../lib/Intern');
+// My Attempt
+const Intern = require("../lib/Intern");
 
-describe("Intern", () => {
-	describe("getName", () => {
-		it('Make sure it\'s setting the Intern name and pulling it as well.', () => {
-			const name = 'sultan';
-			const nameTest = new Intern(name, 32, 'email', 'school');
-			expect(nameTest.getName()).toBe(name);
-		});
-	});
+test("Can create school.", () => {
+    const testSchool = "School Name";
+    const employeeInstance = new Intern("Sultan", 2, "sultan@gmail.com", testSchool);
+    expect(employeeInstance.school).toBe(testSchool);
+});
 
-	describe("getID", () => {
-		it('Make sure it\'s setting the Intern ID and pulling it as well.', () => {
-			const eId = '32';
-			const idTest = new Intern('sultan', eId, 'email', 'school');
-			expect(idTest.getId()).toBe(eId);
-		});
-	});
+test("Testing officeNumber will return office number.", () => {
+    const testSchool = "School Name";
+    const employeeInstance = new Intern("Sultan", 2, "sultan@gmail.com", testSchool);
+    expect(employeeInstance.getSchool()).toBe(testSchool);
+});
 
-	describe("getEmail", () => {
-		it('Make sure it\'s setting the Intern E-mail and pulling it as well.', () => {
-			const email = 'sultan@gmail.com';
-			const emailTest = new Intern('sultan', 32, email, 'school');
-			expect(emailTest.getEmail()).toBe(email);
-		})
-	});
-
-	describe("getSchool", () => {
-		it('Make sure it\'s setting the Intern E-mail and pulling it as well.', () => {
-			const school = 'Denver University';
-			const schoolTest = new Intern('sultan', 32, 'email', school);
-			expect(schoolTest.getSchool()).toBe(school);
-		})
-	});
-
-	describe("getRole", () => {
-		it('Make sure it\'s setting the role and pulling it as well.', () => {
-			const roleString = 'Intern';
-			const roleTest = new Intern('sultan', 1, 'sultan@gmail.com');
-			expect(roleTest.getRole()).toBe(roleString);
-		});
-	});
-
+test("Testing role.", () => {
+    const returnValue = "Intern";
+    const employeeInstance = new Intern("Sultan", 2, "sultan@gmail.com", "School Name");
+    expect(employeeInstance.getRole()).toBe(returnValue);
 });
