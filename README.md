@@ -57,6 +57,10 @@ No license for this project.
 Sultan Siddiqi
 
 ## Tests
+- To run the test:
+```
+npm run test
+```
 
 ## Contact
 
