@@ -8,6 +8,8 @@ The challenge is to build a Node.js command-line application that takes in infor
 
 - [Description](#description)
 - [Installation](#installation)
+- [Screenshots](#screenshots)
+- [DemoVideo](#demovideo)
 - [Usage](#usage)
 - [License](#license)
 - [Contributors](#contributors)
@@ -18,11 +20,21 @@ The challenge is to build a Node.js command-line application that takes in infor
 
 - No downloads are required for this project, installations are however.
 
+## Screenshots
+
+![TestVideo](/assets/Test.gif)
+![ApplicationTest](/assets/Creation.gif)
+![OutputShot](/assets/OutputShot.png)
+
+
+## Demo Video
+
+[Walkthrough-Video-Here](https://youtu.be/HES416IvBn8)
 ## Usage
 
 - Step 1:
 ```
-npm i inquierer
+npm i inquirer
 ```
 - Step 2:
 ```
