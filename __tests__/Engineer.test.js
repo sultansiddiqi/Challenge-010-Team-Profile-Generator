@@ -1,5 +1,6 @@
 const Engineer = require("../lib/Engineer");
 
+//test for engineer
 test("Can create a github.", () => {
     const testGithub = "sultan";
     const employeeInstance = new Engineer("Sultan", 2, "sultan@gmail.com", testGithub);

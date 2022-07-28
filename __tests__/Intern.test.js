@@ -1,6 +1,7 @@
 // My Attempt
 const Intern = require("../lib/Intern");
 
+//test for intern
 test("Can create school.", () => {
     const testSchool = "School Name";
     const employeeInstance = new Intern("Sultan", 2, "sultan@gmail.com", testSchool);

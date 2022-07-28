@@ -1,6 +1,7 @@
 // My Attempt
 const Manager = require("../lib/Manager");
 
+//test for manager
 test("Can create an office number.", () => {
     const testOfficeNumber = 2;
     const employeeInstance = new Manager("Sultan", 2, "sultan@gmail.com", testOfficeNumber);
