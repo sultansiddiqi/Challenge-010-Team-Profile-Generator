@@ -79,7 +79,7 @@ const generateTeam = team => {
 
 }
 
-// export function to generate entire page
+// export function to generate entire page into output folder 
 module.exports = team => {
 
     return `

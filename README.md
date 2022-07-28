@@ -16,9 +16,23 @@ The challenge is to build a Node.js command-line application that takes in infor
 
 ## Installation
 
-- No downloads are required for this project.
+- No downloads are required for this project, installations are however.
 
 ## Usage
+
+- Step 1:
+```
+npm i inquierer
+```
+- Step 2:
+```
+npm i jest
+```
+- Step 3:
+```
+node index.js
+```
+- Step 4: Navigate with keys and enter data until you are satisified. Follow menu to exit.
 
 ## License
 
